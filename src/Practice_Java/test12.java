@@ -2,7 +2,7 @@ package Practice_Java;
 
 import java.util.HashMap;
 
-public class test {
+public class test12 {
 	
   public static void main(String[] args) {
 	
