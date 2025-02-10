@@ -3,11 +3,21 @@ package Practice_Java;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class T_StringCounter {
+public class ReverseStringWithDuplicateCharCount {
 
 	public static void main(String[] args) {   //This line is the main method declaration, 
-        String name = "teststring";  //This line declares a String variable named name and initializes it with the value "teststring". This is the input string from which we want to find duplicate characters.
-		
+        String name = "welcomevodafone";  //This line declares a String variable named name and initializes it with the value "teststring". This is the input string from which we want to find duplicate characters.
+        String rev="";
+    	
+    	int len =name.length(); //4
+    	
+    	for(int i=len-1; i>=0; i--) //3 2 1 0 -1
+    	{
+    		rev=rev+name.charAt(i);	//DCBA
+    	}
+    	
+    	System.out.println("Reversed String is: " + rev); 
+    	
         LinkedHashMap<Character, Integer> map = new LinkedHashMap<Character, Integer>(); //This line declares a map (specifically, a LinkedHashMap) to store characters as keys and their corresponding counts as values. The map will be used to keep track of the occurrences of each character in the name string.
 		
 		for (int i = 0; i < name.length()-1; i++) //This loop iterates over each character in the name string, from the first character (index 0) to the second-to-last character (index name.length()-1). It stops at the second-to-last character because the last character will be handled in the else block below.
@@ -28,7 +38,7 @@ public class T_StringCounter {
 		
 		
 		
-		System.out.println("Duplicate characters and their count:");//This code snippet iterates through each entry (key-value pair) in the map using the entrySet() method and checks if the count (value) of the character is greater than 1. If it is, it means the character is a duplicate. It then prints the duplicate character along with its count to the console.
+		System.out.println("Duplicate characters with count: ");//This code snippet iterates through each entry (key-value pair) in the map using the entrySet() method and checks if the count (value) of the character is greater than 1. If it is, it means the character is a duplicate. It then prints the duplicate character along with its count to the console.
 		for (Map.Entry<Character, Integer> entry : map.entrySet())
 		{
 			if (entry.getValue() > 1)

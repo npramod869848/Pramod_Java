@@ -8,7 +8,7 @@ import java.util.List;
 public class T_MaxMinElementinArray {
 
 	public static void main(String[] args) {
-		int[] numbers = {1000,11,445,10,330,3000,35410};
+		int[] numbers = {36,-99,-7,0,55,89,32,15,56,99};
 
 		int max = numbers[0]; //This line initializes an integer variable max with the value of the first element (index 0) in the numbers array. It assumes the first element is the maximum element until it checks all elements in the array.
 		int min = numbers[0]; //This line initializes an integer variable min with the value of the first element (index 0) in the numbers array. It assumes the first element is the minimum element until it checks all elements in the array.

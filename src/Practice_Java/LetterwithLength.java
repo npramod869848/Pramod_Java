@@ -7,24 +7,26 @@ public class LetterwithLength {
         
         System.out.println("Original String: " + str);
         
-        int length = str.length();
-        System.out.println("Length of the String: " + length);
+        int len = str.length();
+        System.out.println("Length of the String: " + len);
         
         System.out.print("Capital letters: ");
-        for (int i = 0; i < length; i++)
-           {
+        for (int i = 0; i < len; i++)
+        {
             char ch = str.charAt(i);
-            if (Character.isUpperCase(ch)) {
+            if (Character.isUpperCase(ch)) 
+            {
                 System.out.print(ch + " ");
             }
         }
         System.out.println();
         
         System.out.print("Small letters: ");
-        for (int i = 0; i < length; i++)
-            {
+        for (int i = 0; i < len; i++)
+        {
             char ch = str.charAt(i);
-            if (Character.isLowerCase(ch)) {
+            if (Character.isLowerCase(ch)) 
+            {
                 System.out.print(ch + " ");
             }
         }
